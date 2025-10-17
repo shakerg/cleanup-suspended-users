@@ -1,0 +1,22 @@
+{
+    "name": "cleanup-suspended-users",
+    "version": "1.0.0",
+    "description": "Clean up suspended and deleted users from GitHub teams",
+    "type": "module",
+    "main": "cleanup-suspended-users.js",
+    "scripts": {
+        "start": "node cleanup-suspended-users.js"
+    },
+    "keywords": [
+        "github",
+        "team",
+        "cleanup",
+        "suspended-users"
+    ],
+    "author": "",
+    "license": "MIT",
+    "dependencies": {
+        "@octokit/rest": "^20.1.2",
+        "commander": "^14.0.1"
+    }
+}
