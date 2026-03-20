@@ -57,6 +57,7 @@ node cleanup-suspended-users.js --org my-org --all-teams
 | `--org <org>` | GitHub organization name | Yes |
 | `--team <team>` | Team slug to clean (mutually exclusive with `--all-teams`) |  |
 | `--all-teams` | Clean all teams in the organization |  |
+| `--user <username>` | Only check/remove this username if suspended or deleted |  |
 | `--token <token>` | GitHub PAT (optional if `GITHUB_TOKEN` env var is set) |  |
 | `--dry-run` | Simulate cleanup without making any changes |  |
 
@@ -67,6 +68,13 @@ node cleanup-suspended-users.js --org my-org --all-teams
 ```bash
 export GITHUB_TOKEN=ghp_ABC123
 node cleanup-suspended-users.js --org my-org --all-teams --dry-run
+```
+
+### Target a Single User
+
+```bash
+export GITHUB_TOKEN=ghp_ABC123
+node cleanup-suspended-users.js --org my-org --team developers --user suspended-abc123def --dry-run
 ```
 
 Output:
