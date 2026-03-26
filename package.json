@@ -16,6 +16,7 @@
     "author": "",
     "license": "MIT",
     "dependencies": {
+        "@octokit/plugin-throttling": "^9.4.0",
         "@octokit/rest": "^20.1.2",
         "commander": "^14.0.1"
     }
